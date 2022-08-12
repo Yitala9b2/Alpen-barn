@@ -1264,25 +1264,24 @@ h6 {
 }
 
  .page{
-  
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../img/1614451225_145-p-fon-temnoe-derevo-217.jpg")
+    background-attachment: fixed
+    background-size: cover; 
+  margin-top: 100px;
  .page{
-  
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/1614451225_145-p-fon-temnoe-derevo-217.jpg") no-repeat center center fixed; }
+   background-attachment: fixed
+    background-size: cover; 
+  margin-top: 100px;
 
 
 
 .page {
-background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../img/1614451225_145-p-fon-temnoe-derevo-217.jpg") no-repeat center center fixed; }
-background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/1614451225_145-p-fon-temnoe-derevo-217.jpg") no-repeat center center fixed; }
+ no-repeat center center fixed; }
+
 background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/1614451225_145-p-fon-temnoe-derevo-217.jpg") no-repeat center center fixed; }
 
 background-attachment: fixed
--webkit-background-size: 100%; 
-    -moz-background-size: 100%; 
-    -o-background-size: 100%; 
-    background-size: 100%; 
-    -webkit-background-size: cover; 
-    -moz-background-size: cover; 
-    -o-background-size: cover; 
     background-size: cover; 
   margin-top: 100px;
   
