@@ -1267,10 +1267,10 @@ h6 {
 .no-webp .page{
   background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/1614451225_145-p-fon-temnoe-derevo-217.jpg") no-repeat center center fixed; }
 
-.no-webp .page{
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/1614451225_145-p-fon-temnoe-derevo-217.jpg") no-repeat center center fixed; }
+
 
 .page {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/1614451225_145-p-fon-temnoe-derevo-217.jpg") no-repeat center center fixed;
   margin-top: 100px;
   background-size: cover;
 }
