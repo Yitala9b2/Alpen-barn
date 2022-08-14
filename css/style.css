@@ -2387,6 +2387,7 @@ button.swiper-pagination-bullet {
 
 .main-page__map {
   margin-top: 80px;
+  height:400px;
   border-radius: 15px;
   overflow: hidden;
   background-color: black;
@@ -2398,7 +2399,10 @@ button.swiper-pagination-bullet {
   -moz-filter: brightness(50%);
   -o-filter: brightness(50%);
 }
-
+.map img{
+width:100%;
+height:100%;
+}
 .application__title {
   margin-bottom: 20px;
 }
