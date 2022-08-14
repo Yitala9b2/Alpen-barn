@@ -3200,7 +3200,7 @@ object-fit: cover;
             transform: rotate(45deg);
   }
 
-  .page {
+  .webp .page {
     background-size: 100% 100%;
   }
 
