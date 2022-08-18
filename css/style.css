@@ -2315,8 +2315,8 @@ button.swiper-pagination-bullet {
   margin-top: 80px;
   border-radius: 15px;
   position:relative;
-  wigth:100%;
-  height: 450px
+  width:100%;
+  height: 450px;
   overflow: hidden;
   background-color: black;
   -webkit-box-shadow: 10px 10px 100px 20px #66cc9993;
@@ -2333,6 +2333,7 @@ position:absolute;
   height:100%;
   top:0;
   left:0;
+  object-fit:cover;
 }
 .application__title {
   margin-bottom: 20px;
