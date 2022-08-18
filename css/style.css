@@ -1241,6 +1241,7 @@ body::after {
           animation-name: fadeInLeft;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
+  animation-delay: 1s;
 }
 
 @-webkit-keyframes fadeInLeftBig {
@@ -1307,73 +1308,6 @@ body::after {
           animation-name: fadeOutLeft;
 }
 
-/* Flippers */
-
-/*@import 'flippers/flip.scss';
-@import 'flippers/flipInX.scss';
-@import 'flippers/flipInY.scss';
-@import 'flippers/flipOutX.scss';
-@import 'flippers/flipOutY.scss';*/
-
-/* Lightspeed */
-
-/*@import 'lightspeed/lightSpeedInRight.scss';
-@import 'lightspeed/lightSpeedInLeft.scss';
-@import 'lightspeed/lightSpeedOutRight.scss';
-@import 'lightspeed/lightSpeedOutLeft.scss';*/
-
-/* Rotating entrances */
-
-/*@import 'rotating_entrances/rotateIn.scss';
-@import 'rotating_entrances/rotateInDownLeft.scss';
-@import 'rotating_entrances/rotateInDownRight.scss';
-@import 'rotating_entrances/rotateInUpLeft.scss';
-@import 'rotating_entrances/rotateInUpRight.scss';*/
-
-/* Rotating exits */
-
-/*@import 'rotating_exits/rotateOut.scss';
-@import 'rotating_exits/rotateOutDownLeft.scss';
-@import 'rotating_exits/rotateOutDownRight.scss';
-@import 'rotating_exits/rotateOutUpLeft.scss';
-@import 'rotating_exits/rotateOutUpRight.scss';*/
-
-/* Specials */
-
-/*@import 'specials/hinge.scss';
-@import 'specials/jackInTheBox.scss';
-@import 'specials/rollIn.scss';
-@import 'specials/rollOut.scss';*/
-
-/* Zooming entrances */
-
-/*@import 'zooming_entrances/zoomIn.scss';
-@import 'zooming_entrances/zoomInDown.scss';
-@import 'zooming_entrances/zoomInLeft.scss';
-@import 'zooming_entrances/zoomInRight.scss';
-@import 'zooming_entrances/zoomInUp.scss';*/
-
-/* Zooming exits */
-
-/*@import 'zooming_exits/zoomOut.scss';
-@import 'zooming_exits/zoomOutDown.scss';
-@import 'zooming_exits/zoomOutLeft.scss';
-@import 'zooming_exits/zoomOutRight.scss';
-@import 'zooming_exits/zoomOutUp.scss';*/
-
-/* Sliding entrances */
-
-/*@import 'sliding_entrances/slideInDown.scss';
-@import 'sliding_entrances/slideInLeft.scss';
-@import 'sliding_entrances/slideInRight.scss';
-@import 'sliding_entrances/slideInUp.scss';*/
-
-/* Sliding exits */
-
-/*@import 'sliding_exits/slideOutDown.scss';
-@import 'sliding_exits/slideOutLeft.scss';
-@import 'sliding_exits/slideOutRight.scss';
-@import 'sliding_exits/slideOutUp.scss';*/
 
 .header {
   position: fixed;
@@ -1949,7 +1883,7 @@ button.swiper-pagination-bullet {
   height: 670px;
   position: absolute;
   background: white;
-  z-index: 2;
+  
   border-radius: 50%;
   left: 50%;
   top: 50%;
