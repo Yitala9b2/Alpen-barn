@@ -1621,7 +1621,7 @@ body::after {
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: 2;
+  
 }
 
 .swiper-wrapper {
