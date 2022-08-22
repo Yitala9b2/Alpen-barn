@@ -5621,7 +5621,7 @@
 
    }
 
-});;
+});
     window["FLS"] = true;
     isWebp();
     menuInit();
