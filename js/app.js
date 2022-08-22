@@ -5594,14 +5594,34 @@
         let breadLast = document.querySelector(".breadcrumbs__li");
         breadLast.innerHTML += `<span>  ${singleTitleChild} </span>`;
     }
-    document.addEventListener("watcherCallback", (function(e) {
+    document.addEventListener("watcherCallback", function (e) {
+        //   // Полная информация от наблюдателя
         const entry = e.detail.entry;
-        const targetElement = entry.target;
-        if (entry.isIntersecting) {
-            !targetElement.classList.contains("animated") ? targetElement.classList.add("animated") : null;
-            if (targetElement.classList.contains("row2")) !targetElement.classList.contains("bounceIn") ? targetElement.classList.add("bounceIn") : null;
-        }
-    }));
+        //   // Наблюдаемый объект
+           const targetElement = entry.target;
+   if (entry.isIntersecting) { //событие когда во вбюпорте
+
+     !targetElement.classList.contains('animated') ? targetElement.classList.add('animated') : null;
+     startQueries()
+        function startQueries(){
+            const MediaQueryNew = matchMedia('(max-width:767.98px)')
+            ifMatchesChange(MediaQueryNew)
+            MediaQueryNew.addListener(ifMatchesChange)
+            function ifMatchesChange(MediaQueryNew){
+                if (MediaQueryNew.matches) {
+                    targetElement.classList.remove('animated') 
+                    targetElement.classList.remove('bounceIn') 
+    } else{
+        !targetElement.classList.contains('animated') ? targetElement.classList.add('animated') : null;
+        if (targetElement.classList.contains('row2')) {
+              !targetElement.classList.contains('bounceIn') ? targetElement.classList.add('bounceIn') : null;
+            }
+    }
+}}
+
+   }
+
+});;
     window["FLS"] = true;
     isWebp();
     menuInit();
