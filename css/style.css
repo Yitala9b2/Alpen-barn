@@ -1808,7 +1808,7 @@ body::after {
 .menu__item_footer .menu__link {
   color: white;
 }
-
+/* футер */
 .footer__contacts {
   display: -webkit-box;
   display: -ms-flexbox;
