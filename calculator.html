@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Расчет стоимости</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221002195805">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<div class="menu__logo">
+						<a href="index.html">
+							<img src="img/Logo.svg" alt="">
+						</a>
+					</div>
+
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__location"> г. Санкт-Петербург</li>
+							<li class="menu__item"><a href="index.html#about" data-goto-header data-goto=".about" class="menu__link about-link">О компании</a></li>
+							<li class="menu__item"><a href="index.html#projects" data-goto-header data-goto=".projects" class="menu__link projects-link">Проекты</a></li>
+							<li class="menu__item"><a href="index.html#contacts" data-goto-header data-goto=".contacts__title" class="menu__link contacts-link">Контакты</a></li>
+							<li class="menu__item"><a href="calculator.html" class="menu__link contacts-link">Калькулятор</a></li>
+						</ul>
+					</nav>
+					<div class="menu__phone" data-da=".menu__list, 550">
+						<a href="tel: +79319686618">+7 (931) 968-66-18</a>
+					</div>
+				</div>
+			</div>
+
+
+		</header>
+		<main class="page calculator">
+			<div class="calculator__price">
+				<div class="calculator__price-title title">Итоговая цена:</div>
+				<div class="calculator__price-total">
+					<span id="total-price">0</span> рублей
+				</div>
+			</div>
+			<div class="calculator__container">
+				<div class="single__navi">
+					<div class="single__title title-single">
+						<a href="index.html#projects" class="leftbutton">
+							<img src="img/second-page/on.svg" alt="">
+						</a>
+						<h2>Калькулятор</h2>
+					</div>
+					<div class="single__breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__li"><a href="index.html"> Главная страница </a>/</li>
+						</ul>
+					</div>
+				</div>
+				<div class="calculator__main-block">
+					<div class="rangeSlider__filters filters">
+						<div class="filters__item filters-price">
+							<h2 class="filters-price__title title">Выберите площадь проекта</h2>
+							<div class="filters-price__slider"></div>
+							<div class="filters-price__inputs">
+								<label class="filters-price__label">
+									<input type="number" min="25" max="300" placeholder="0" class="filters-price__input" id="input0">
+									<span class="filters-price__text">м²</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="calculator__choose choose">
+						<div class="choose__title title">Выберите вариант разработки</div>
+						<div class="choose__block">
+							<div class="choose__cart">
+								<input type="radio" value="1" checked="checked" name="expluatation" id="box">
+								<label for="box">
+									<div class="choose__image _icon---home-img"></div>
+									<p class="choose__text">коробка</p>
+								</label>
+							</div>
+							<div class="choose__cart">
+								<input type="radio" value="1.5" name="expluatation" id="key">
+								<label for="key">
+									<div class="choose__image _icon---home-key"></div>
+									<p class="choose__text">под ключ</p>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="calculator__choose choose">
+						<div class="choose__title title">Выберите количество этажей</div>
+						<div class="choose__block">
+							<div class="choose__cart">
+								<input type="radio" value="1" checked="checked" name="floor" id="one">
+								<label for="one">
+									<div class="choose__image _icon---1-floor"></div>
+									<p class="choose__text">один этаж</p>
+								</label>
+							</div>
+							<div class="choose__cart">
+								<input type="radio" value="1.2" name="floor" id="two">
+								<label for="two">
+									<div class="choose__image _icon---2-floor"></div>
+									<p class="choose__text">два этажа</p>
+								</label>
+							</div>
+							<div class="choose__cart">
+								<input type="radio" value="1.4" name="floor" id="three">
+								<label for="three">
+									<div class="choose__image _icon---3-floor"></div>
+									<p class="choose__text">три этажа</p>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="calculator__choose choose">
+						<div class="choose__title title">Выберите дополнительные опции</div>
+						<div class="choose__block">
+							<div class="choose__cart">
+								<input type="checkbox" value="500000" name="option" id="garage">
+								<label for="garage">
+									<div class="choose__image _icon---garage"></div>
+									<p class="choose__text">гараж</p>
+								</label>
+							</div>
+							<div class="choose__cart">
+								<input type="checkbox" value="500000" name="option" id="brewery">
+								<label for="brewery">
+									<div class="choose__image _icon---brewery"></div>
+									<p class="choose__text">котельная</p>
+								</label>
+							</div>
+							<div class="choose__cart">
+								<input type="checkbox" value="300000" name="option" id="terrasa">
+								<label for="terrasa">
+									<div class="choose__image _icon---terrasa"></div>
+									<p class="choose__text">терраса</p>
+								</label>
+							</div>
+							<div class="choose__cart">
+								<input type="checkbox" value="200000" name="option" id="panorama">
+								<label for="panorama">
+									<div class="choose__image _icon---panorama"></div>
+									<p class="choose__text">панорамные окна</p>
+								</label>
+							</div>
+							<div class="choose__cart">
+								<input type="checkbox" value="100000" name="option" id="window-roof">
+								<label for="window-roof">
+									<div class="choose__image _icon---window-roof"></div>
+									<p class="choose__text">окно на крыше</p>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="calculator__result result">
+						<div class="result__title title">Итог:</div>
+						<form action="#" data-popup-message="#popup_accept" data-dev method="POST" class="result__form">
+							<ul class="result__list">
+								<li class="result__li">
+									<div class="result__text"> Площадь проекта:
+										<input contenteditable type="text" id="project-square">
+									</div>
+								</li>
+								<li class="result__li">
+									<div class="result__text">Вариант разработки:
+										<input type="text" id="project-develop" readonly>
+									</div>
+								</li>
+								<li class="result__li">
+									<div class="result__text">Количество этажей:
+										<input id="project-floors" readonly>
+									</div>
+								</li>
+								<li class="result__li">
+									<div class="result__text">Дополнительные опции:
+										<input type="text" class="project-options" id="project-garage" readonly>
+										<input type="text" class="project-options" id="project-brewery" readonly>
+										<input type="text" class="project-options" id="project-terrasa" readonly>
+										<input type="text" class="project-options" id="project-panorama" readonly>
+										<input type="text" class="project-options" id="project-window-roof" readonly>
+									</div>
+								</li>
+							</ul>
+							<div class="confirm">
+								<div class="form-name__line">
+									<input class="form__name" data-required="" data-error="Введите имя" type="text" placeholder="Ваше имя" name="name">
+								</div>
+								<div class="form-telephone__line">
+									<input class="form__telephone" data-required="" data-error="Введите номер телефона" autocomplete="off" type="tel" placeholder="Ваш телефон" name="tel">
+								</div>
+								<button type="submit" class="result__button btn"><span> Отправить</span></button>
+							</div>
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</main>
+
+		<footer class="footer">
+
+			<div class="footer__container">
+				<div class="footer__menu">
+					<div class="menu__logo_footer">
+						<a href="index.html">
+							<img src="img/LogoWhite.svg" alt="">
+						</a>
+					</div>
+					<nav class="menu__body_footer">
+						<ul class="menu__list_footer">
+							<li class="menu__item_footer"><a href="index.html#about" data-goto-header data-goto=".about__title" class="menu__link about-link">О компании</a></li>
+							<li class="menu__item_footer"><a href="index.html#projects" data-goto-header data-goto=".projects__title" class="menu__link projects-link">Проекты</a></li>
+							<li class="menu__item_footer"><a href="index.html#contacts" data-goto-header data-goto=".contacts__title" class="menu__link contacts-link">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__contacts footer-contacts">
+					<div class="footer-contacts__phone">
+						<a href="tel:+79319686618">+7 (931) 968-66-18</a>
+					</div>
+					<div class="footer-contacts__location">
+						г. Санкт-Петербург Малый проспект П.С. дом 5 литер Б офис 301–315
+					</div>
+					<div class="footer-contacts__socials">
+						<a href="https://web.whatsapp.com/"><img src="img/footer/whatsapp.svg" alt=""></a>
+						<a href=""><img src="img/footer/insta.svg" alt=""></a>
+						<a href=""><img src="img/footer/facebook.svg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20221002195805"></script>
+	<div id="popup_accept" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><span></span></button>
+				<div class="popup__text text_accept">
+					<div class="accept_image">
+						<img src="img/accept.svg" alt="">
+					</div>
+					<h1>Ваша Заявка успешно отправлена</h1>
+					<h2>Спасибо, что обратились в нашу компанию. <br> Наш менеджер с вами свяжется</h2>
+					<div class="footer__info">
+						<div class="footer__social">
+							<a class="_icon--whatsapp" href="#"></a>
+							<a class="_icon--instagram" href="#"></a>
+							<a class="_icon--facebook" href="#"></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
