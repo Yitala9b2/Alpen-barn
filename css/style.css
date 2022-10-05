@@ -5794,14 +5794,16 @@ button.swiper-pagination-bullet {
 }
 
 
-.webp .page{ background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/1614451225_145-p-fon-temnoe-derevo-217.webp) no-repeat center center fixed; 
+.webp .page{ 
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/1614451225_145-p-fon-temnoe-derevo-217.webp) no-repeat center center fixed; 
 background-size:cover;
 }
 
 
 @media (max-width: 767.98px){
 
-  .webp .page{ background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/wrap.webp) no-repeat center center fixed; 
-  background-size:cover;
+  .webp .page{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/wrap.webp) no-repeat center center fixed; 
+  background-size: 100% 100%;
   }
 }
